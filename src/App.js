@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Filter from "./Components/Filter";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 class App extends React.Component{
     state={}
 
@@ -42,7 +43,9 @@ class App extends React.Component{
               {this.state.newsfromapi && this.state.newsfromapi.status==="OK" ?
                   <News newsarticles={this.state.newsfromapi.results}/>: <div>
                       <h1> Waiting...</h1>
-                      <h5> This might be because of Nytimes API-limitaions, 4000 calls per day, max 10 calls per min</h5>
+                      <h5> This might be because of Nytimes API-limitations, 4000 calls per day, max 10 calls per min..
+                          wait for 30 secs and refresh.. </h5>
+
                   </div>}
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Card from 'react-bootstrap/Card'
-
+import Moment from 'moment'
 
 class Newsitem extends React.Component{
 
@@ -16,13 +16,13 @@ class Newsitem extends React.Component{
         : null}
         <Card.Body>
             <Card.Title style={{cursor:'pointer'}}><a href={this.props.article.url}>{this.props.article.title}</a></Card.Title>
+            <Card.Subtitle  className="mb-2 text-muted" >{this.props.article.section} {' '}{this.props.article.subsection}</Card.Subtitle>
             <Card.Text>
                 {this.props.article.abstract}
             </Card.Text>
         </Card.Body>
         <Card.Footer>
-            <small className="text-muted">{this.props.article.published_date}, ({this.props.article.section} {' '}
-            {this.props.article.subsection}) </small>
+            <small className="text-muted"> {Moment(this.props.article.published_date).fromNow()} </small>
         </Card.Footer>
     </Card>
 
