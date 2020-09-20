@@ -19,10 +19,11 @@ class App extends React.Component{
         let baseurl='https://newsapi.org/v2/top-headlines?country=us&'
       let apikey='&apiKey=29bae5c10b734c0e98ec58a6d640b817'
       let complete=baseurl+r+apikey
-      fetch(complete)
+
+      fetch('https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=zPDAP29ogOhQeNqE7vCK4hrH5TQlvfWQ')
           .then(res=>res.json())
           .then((data)=>{
-              this.setState(({newsfromapi:data}))
+              console.log(data)
           })
           .catch()
 
