@@ -1,5 +1,5 @@
 import React from "react";
-
+import Button from 'react-bootstrap/Button'
 class Filter extends React.Component{
         getStyle= {
             textAlign:'center',
@@ -17,21 +17,21 @@ selectedCountry='R'
     render() {
         return(
            <div style={this.getStyle}>
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'home.json')}>Home</button> {' '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'arts.json')}>Arts</button>{' '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'books.json')}>Books</button>{' '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'business.json')}>Business</button>{' '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'fashion.json')}>Fashion</button>{' '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'food.json')}>Food</button>{' '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'health.json')}>Health</button> {'  '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'magazine.json')}>Magazine</button> {'  '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'movies.json')}>Movies</button> {'  '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'nyregion.json')}>NYregion</button> {'  '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'opinion.json')}>Opinion</button> {'  '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'politics.json')}>Politics</button> {'  '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'science.json')}>Science</button> {'  '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'sports.json')}>Sports</button> {'  '}
-               <button style={this.getbuttonstyle} onClick={this.props.category.bind(this,'technology.json')}>Technology</button> {'  '}
+               <Button variant="primary" onClick={this.props.category.bind(this,'home.json')}>Home</Button> {' '}
+               <Button variant="primary" onClick={this.props.category.bind(this,'arts.json')}>Arts</Button>{' '}
+               <Button variant="primary"  onClick={this.props.category.bind(this,'books.json')}>Books</Button>{' '}
+               <Button variant="primary"  onClick={this.props.category.bind(this,'business.json')}>Business</Button>{' '}
+               <Button variant="primary" onClick={this.props.category.bind(this,'fashion.json')}>Fashion</Button>{' '}
+               <Button variant="primary"  onClick={this.props.category.bind(this,'food.json')}>Food</Button>{' '}
+               <Button variant="primary"  onClick={this.props.category.bind(this,'health.json')}>Health</Button> {'  '}
+               <Button variant="primary"  onClick={this.props.category.bind(this,'magazine.json')}>Magazine</Button> {'  '}
+               <Button variant="primary"  onClick={this.props.category.bind(this,'movies.json')}>Movies</Button> {'  '}
+               <Button variant="primary" onClick={this.props.category.bind(this,'nyregion.json')}>NYregion</Button> {'  '}
+               <Button variant="primary"  onClick={this.props.category.bind(this,'opinion.json')}>Opinion</Button> {'  '}
+               <Button variant="primary"  onClick={this.props.category.bind(this,'politics.json')}>Politics</Button> {'  '}
+               <Button variant="primary"  onClick={this.props.category.bind(this,'science.json')}>Science</Button> {'  '}
+               <Button variant="primary"  onClick={this.props.category.bind(this,'sports.json')}>Sports</Button> {'  '}
+               <Button variant="primary"  onClick={this.props.category.bind(this,'technology.json')}>Technology</Button> {'  '}
 
 
 
