@@ -18,7 +18,7 @@ class App extends React.Component{
         .catch()
   }
   category=(r)=>{
-        console.log(r)
+
         let baseurl='https://newsapi.org/v2/top-headlines?country=us&'
       let apikey='&apiKey=29bae5c10b734c0e98ec58a6d640b817'
       let complete=baseurl+r+apikey
@@ -33,7 +33,7 @@ class App extends React.Component{
 }
 
   render() {
-      console.log("here", this.state.newsfromapi);
+
 
       return (
           <div >

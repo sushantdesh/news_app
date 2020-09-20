@@ -12,7 +12,7 @@ class Newsitem extends React.Component{
 
     <Card>
         {this.props.article.multimedia?
-        <Card.Img  src={this.props.article.multimedia[0].url} />
+        <Card.Img  src={this.props.article.multimedia[0].url}  alt="image did not load"/>
         : null}
         <Card.Body>
             <Card.Title style={{cursor:'pointer'}}><a href={this.props.article.url}>{this.props.article.title}</a></Card.Title>
