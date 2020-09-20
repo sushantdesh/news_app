@@ -11,7 +11,7 @@ class Newsitem extends React.Component{
 <div >
 
     <Card>
-        {this.props.article.multimedia?
+        {this.props.article.multimedia ?
         <Card.Img  src={this.props.article.multimedia[0].url}  alt="image did not load"/>
         : null}
         <Card.Body>
